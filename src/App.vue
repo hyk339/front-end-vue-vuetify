@@ -32,6 +32,28 @@
             <v-list-item-title>About</v-list-item-title>
           </v-list-item-content>
         </v-list-item>
+     
+        <!-- prepend는 아이콘 넣는것이다.-->
+        <!-- :value라고 해서 javascript로 읽혀주자.-->
+        <v-list-group :value="false" prepend-icon="mdi-palette-outline" active-class="yellow--text">
+          <template v-slot:activator>
+            <v-list-item-title>Styles</v-list-item-title>
+          </template>
+          <v-list-item to="/styles/textandtypography" color="white">
+            <v-list-item-icon>
+            </v-list-item-icon>
+            <v-list-item-content>
+              <v-list-item-title>Text And Typography</v-list-item-title>
+            </v-list-item-content>
+          </v-list-item>
+          <v-list-item to="/styles/spacing" color="white">
+            <v-list-item-icon>
+            </v-list-item-icon>
+            <v-list-item-content>
+              <v-list-item-title>Margin and Padding</v-list-item-title>
+            </v-list-item-content>
+          </v-list-item>
+        </v-list-group>
       </v-list>
     </v-navigation-drawer>
 
